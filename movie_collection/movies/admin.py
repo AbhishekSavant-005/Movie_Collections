@@ -8,8 +8,8 @@ class CollectionAdmin(admin.ModelAdmin):
     ordering = ('id',)               # Order by ID by default
 
 class MovieAdmin(admin.ModelAdmin):
-    list_display = ('id', 'external_id', 'title')  # Adjust to your actual fields
-    search_fields = ('external_id',)                     # Add search functionality
+    list_display = ('id', 'external_id', 'title', 'genre',)  # Adjust to your actual fields
+    search_fields = ('id','title',)                     # Add search functionality
     ordering = ('id',)                                   # Order by ID by default
 
 # Register the models with the admin site

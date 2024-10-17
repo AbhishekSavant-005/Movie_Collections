@@ -18,8 +18,6 @@ from .services import fetch_movies_from_api
 
 # View to list movies from both the API and the database
 
-
-# views.py
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def list_movies(request):
